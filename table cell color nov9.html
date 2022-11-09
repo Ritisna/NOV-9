@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <style>
+        table, tr, th, td{
+            border: 2px solid rgb(9, 1, 39);
+            padding: 5px;
+            border-collapse: collapse;
+            
+        }
+    </style>
+</head>
+<body>
+    <table class="mytable">
+        <tr>
+            <th>Class</th>
+            <th>Percentage</th>
+            <th>School</th>
+        </tr>
+        <tr>
+            <td>9th</td>
+            <td>82%</td>
+            <td>Vikash Residential School</td>
+        </tr>
+
+        <tr>
+            <td>10th</td>
+            <td>89.4%</td>
+            <td>Vikash Residential School</td>
+        </tr>
+
+        <tr>
+            <td>11th</td>
+            <td>80%</td>
+            <td>Vikash Residential School</td>
+        </tr>
+
+        <tr>
+            <td>12th</td>
+            <td>84.4%</td>
+            <td>Vikash Residential School</td>
+        </tr>
+
+   
+    </table>
+    <br><br>
+    <button>SUBMIT</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("table tr:even").css({"background-color":"pink","color":"aliceblue"});
+
+        })
+    })
+    </script>
+</body>
+</html>
